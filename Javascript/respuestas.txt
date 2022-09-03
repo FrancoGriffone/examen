@@ -1,0 +1,95 @@
+1)Lo impreso en pantalla será:
+-25 (correspondiente a 4 + 9 + 12 (cuadradoDeA(2*2)) + (cuadradoDeB(3*3)) + (2*a(2)*b(3)))
+-81 (correspondiente a 16 + 25 + 40 (cuadradoDeA(4*4)) + (cuadradoDeB(5*5)) + (2*a(4)*b(5)))
+-2, que corresponde al número de llamadas, dado que la función que calculaBinomio se llamó 2 veces 
+(y por cada vez se ejecutaba consigo numLlamadas++)
+-y undefined (dado que se está pidiendo el valor de cuadradoDeA, que no se encuentra definido). 
+"El operador typeof devuelve una cadena que indica el tipo del operando sin evaluarlo.
+operando es la cadena, variable, palabra clave u objeto para el que se devolverá su tipo" (definición),
+y dado que typeof está intentando definir un parametro que no tiene valor perse
+
+2) s2.toLowerCase nos permitiría que esto se escriba en minúsculas
+
+3) archivo pregunta3.js
+
+4)Escriba un programa JavaScript para verificar si una matriz es una matriz diagonal
+O no. En álgebra lineal, una matriz diagonal es una matriz en la que las entradas
+fuera de la diagonal principal son todos cero (la diagonal desde la esquina superior izquierda hasta
+la parte inferior derecha).
+Ejemplo:
+[1, 0, 0], [0, 2, 0], [0, 0, 3] ]) = verdadero
+[1, 0, 0], [0, 2, 3], [0, 0, 3] ]) = falso
+
+React excercises 
+1)opción 1 y 3. Las props, que viene de propiedades, son valores heredados de los componentes; 
+estrictamente no creo que sea un "mecanismo" 
+pero si facilita el acceso a los datos de un componente hijo con mediante props de los datos del padre
+
+2)Los componentes pueden ser clases o funciones que devuelven elementos
+
+3)Los componentes pueden ser padres o hijos, sin embargo se pueden manifestar (cualquiera de los dos)
+como componentes de clase o funciones
+
+4)State es un objeto JS interno a cada componente, que intenta representar el estado actual 
+del componente. Dicho estado puede cambiar dependiendo de la funcionalidad de la aplicación, 
+puede cambiar por una interacción externa por ejemplo de un usuario, una llamada Ajax, etc.
+
+5)Imagen sobre el ciclo de vida de los componentes en carpeta
+Estos métodos se llaman cuando se crea una instancia de un componente 
+y se inserta en el DOM:
+
+    constructor()
+    static getDerivedStateFromProps()
+    render()
+    componentDidMount()
+Una actualización puede ser causada por cambios en las props o el estado. 
+Estos métodos se llaman en el siguiente orden cuando un componente 
+se vuelve a renderizar:
+
+    static getDerivedStateFromProps()
+    shouldComponentUpdate()
+    render()
+    getSnapshotBeforeUpdate()
+    componentDidUpdate()
+Este método es llamado cuando un componente se elimina del DOM:
+
+    componentWillUnmount()
+
+6)Establecer estado de componente(imagino hook useState)
+
+7)opción 2 //this.setState({ value: "my value" })
+
+8)Que sucede cuando cambiamos el estado de un componente ??
+
+9)Escriba un componente que represente una lista de elementos, dada una propiedad que
+contiene una matriz de objetos en la siguiente forma: { firstname: "demo",
+apellido: "demo", dni: 1234}
+
+10) archivo pregunta10.js
+
+11) se realiza llamando por el nombre lo que se quiere traer desde su nombre. Ejemplo:
+import {useState} from "react";
+
+12)opcion 4, aunque en el ejemplo la función es MiComponente 
+//import { MyComponent } from './MyComponent.js';
+
+13)falta el return <></> si se busca que Hello World quede plasmado solo con eso. 
+Ejemplo de como debría quedar:
+
+const MiComponente = () => {
+    return(
+        <>
+            <h1>Hello World</h1>
+        </>
+    )
+}
+
+14) ??
+
+15)
+
+16)llamada api rest desde javascript
+
+17)para que sirve el hook useEffect
+
+18)archivo pregunta18.js
