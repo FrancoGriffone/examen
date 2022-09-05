@@ -1,0 +1,12 @@
+1) Hibernate es una herreamienta de mapeo objeto relacional. Permite a la aplicción
+manipluar datos entre la base de datos relacional tradicional operando sobre objetos.
+Esto quiere decir, que busca agilizar la relación entre la aplicación y 
+la base de datos SQL. Todo esto se realiza mediante archivos declarativos (XML)
+o anotaciones en beans (que se utilizan para encapsular varios objetos y utilizar 1
+en vez de varios simples más)
+
+2)
+
+3)
+
+4)
