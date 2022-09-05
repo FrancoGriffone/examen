@@ -55,15 +55,14 @@ Este método es llamado cuando un componente se elimina del DOM:
 
     componentWillUnmount()
 
-6)Establecer estado de componente(imagino hook useState)
+6)Para establecer el estado en React se utliza, de manera nativa, el hook useState
+que nos permitirá fijar y actualizar el estado de nuestro componente
 
 7)opción 2 //this.setState({ value: "my value" })
 
-8)Que sucede cuando cambiamos el estado de un componente ??
+8)Cuando cambiamos el estado de un componente, useState vuelve a renderizarlo, generando una actualización del mismo
 
-9)Escriba un componente que represente una lista de elementos, dada una propiedad que
-contiene una matriz de objetos en la siguiente forma: { firstname: "demo",
-apellido: "demo", dni: 1234}
+9)archivo pregunta9.js
 
 10) archivo pregunta10.js
 
@@ -84,12 +83,16 @@ const MiComponente = () => {
     )
 }
 
-14) ??
+14)El objetivo de dicho código es cambiar el estado de property con cada click (estado inicial = 1)
 
-15)
+15)No tiene constructor + se está renderizando antes de setearle el estado
 
-16)llamada api rest desde javascript
+16)archivo pregunta16.js
 
-17)para que sirve el hook useEffect
+17)El Hook useEffect es un Hook de efecto que nos permite ejecutar tareas secundaria dentro de nuestros 
+componentes funcionales, por ejemplo, podemos emular los métodos de ciclo de vida
+(   componentDidMount, se ejecuta cuando el componente es montado
+    componentDidUpdate, se ejecuta cuando el componente sufre un cambio en su state o props.
+    componentWillUnmount, se ejecuta cuando el componente es desmontado.)
 
 18)archivo pregunta18.js
